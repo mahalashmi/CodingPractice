@@ -1,4 +1,4 @@
-class Print1to100{
+class testof{
     public static void main(String[] args)
     {
         hiiter();
@@ -27,10 +27,10 @@ class Print1to100{
 
     public static void hiiter()
     {
-        int i=0;
+        ushort i=0;
         while(true)
         {
-            //System.out.println(i);
+            System.out.println(i);
             i++;
         }
     }
