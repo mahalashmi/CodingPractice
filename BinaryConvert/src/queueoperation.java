@@ -7,13 +7,13 @@ class queueoperation
       
       Queue<Integer> q1;
         q1 = new PriorityQueue<Integer>();
-      add(q1);
-      peek(q1);
-      size(q1);
-      remove(q1);            
+      add1(q1);
+      peek1(q1);
+      size1(q1);
+      remove1(q1);            
     }        
 
-    static void add(Queue<Integer> q1)
+    static void add1(Queue<Integer> q1)
     {
         for(int i=1;i<10;i++)
         {
@@ -22,7 +22,7 @@ class queueoperation
     }
 
     
-    static void peek(Queue<Integer> q1)
+    static void peek1(Queue<Integer> q1)
     {
        
             int result=q1.peek();
@@ -30,20 +30,19 @@ class queueoperation
             System.out.println(result);
         
     }
-    static void size(Queue<Integer> q1)
+    static void size1(Queue<Integer> q1)
     {
         System.out.println("Length of the queue is:");
         int result1=q1.size();
         System.out.println(result1);
     }
 
-    static void remove(Queue<Integer> q1)
+    static void remove1(Queue<Integer> q1)
     {
-        for(int i=0;i<10;i++)
+        while(q1.size()>0)
         {
            int queueitems= q1.remove();
            System.out.println(queueitems);
-
         }
     }
 }
